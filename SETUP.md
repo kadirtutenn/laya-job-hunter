@@ -14,14 +14,16 @@ ollaya serve
 In another terminal:
 
 ```bash
-git clone <REPOSITORY_URL>
+git clone https://github.com/kadirtutenn/laya-job-hunter.git
 cd laya-job-hunter
 python3 -m venv .venv
-source .venv/bin/activate  # Windows PowerShell: .venv\\Scripts\\Activate.ps1
+source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
 python -m pip install -e .
 python -m playwright install chromium
-cp job_hunter/sample_profile.example.json job_hunter/sample_profile.json
+cp job_hunter/sample_profile.example.json job_hunter/sample_profile.json  # PowerShell: Copy-Item job_hunter/sample_profile.example.json job_hunter/sample_profile.json
 ```
+
+On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1` and copy the profile with `Copy-Item job_hunter/sample_profile.example.json job_hunter/sample_profile.json`.
 
 Fill the ignored profile JSON from your own CV, then run:
 

@@ -1,5 +1,5 @@
 """
-CLI Interface for Job Hunter: Autonomous Multi-Agent Job Hunting & Triage System.
+Command line interface for local job search and tracking.
 """
 
 from __future__ import annotations
@@ -515,7 +515,7 @@ def cmd_batch_apply(args):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Job Hunter: Autonomous Multi-Agent Job Hunting & Triage System (Ollaya/Laya)"
+        description="Local job search and application tracking with Ollaya/Laya"
     )
     parser.add_argument("--db", default="job_hunter_brain.db", help="Path to SQLite database")
     parser.add_argument("--model", default="laya", help="Ollaya decision model (default: laya)")

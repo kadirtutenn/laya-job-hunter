@@ -120,7 +120,7 @@ wheels = [
 
 [[package]]
 name = "laya-job-hunter"
-version = "3.0.0"
+version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "playwright" },

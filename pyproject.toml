@@ -7,8 +7,8 @@ packages = ["job_hunter"]
 
 [project]
 name = "laya-job-hunter"
-version = "3.0.0"
-description = "Autonomous Multi-Agent Career & Job Hunting Engine powered by Ollaya/Laya Decision Models and Playwright"
+version = "0.1.0"
+description = "Local-first job search and application tracking with Ollaya/Laya"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

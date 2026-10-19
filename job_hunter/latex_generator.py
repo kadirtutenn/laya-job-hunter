@@ -40,5 +40,7 @@ def compile_latex_with_tectonic(tex_path, output_dir):
     binary = get_tectonic_path()
     if not binary:
         raise FileNotFoundError("Tectonic is not installed")
-    Path(output_dir).mkdir(parents=True, exist_ok=True)
-    return subprocess.run([binary, str(tex_path), "--outdir", str(output_dir)], check=True)
+    out_dir = Path(output_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    subprocess.run([binary, str(tex_path), "--outdir", str(out_dir)], check=True)
+    return out_dir / (Path(tex_path).stem + ".pdf")
